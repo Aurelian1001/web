@@ -1,0 +1,213 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8069c2;
+    background-color: #5d5f6a65;
+  }
+  
+  a {
+    text-decoration: blueviolet;
+    color: #6f97b9;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+  }
+  
+  header nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Hero Styles */
+  
+  .hero {
+    background-image: linear-gradient(to bottom, #333, #555);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #23527c;
+  }
+  
+  /* Anime List Styles */
+  
+  .anime-list {
+    padding: 20px;
+  }
+  
+  .anime-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .anime-list li {
+    margin: 20px;
+    width: 200px;
+  }
+  
+  .anime-list img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .anime-list h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .anime-list p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Genre Styles */
+  
+  .genre {
+    padding: 20px;
+  }
+  
+  .genre ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genre li {
+    margin: 20px;
+    width: 100px;
+  }
+  
+  .genre a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b0b0b;
+  }
+  
+  .genre a:hover {
+    color: #23527c;
+  }
+  
+  /* Watch Styles */
+  
+  .watch {
+    padding: 20px;
+  }
+  
+  .watch iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .description-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .description {
+    width: 230px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-more-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-more-button:hover {
+    background-color: #9d9654;
+  }

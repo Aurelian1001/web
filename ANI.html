@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeSurf.com</title>
+  <link rel="stylesheet" href="C:\Create\.vscode\.vscode\col.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Anime List</a></li>
+        <li><a href="#">Genre</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+      <h1></h1><button onclick="location.href='file:///C:/Create/.vscode/.vscode/searchpage.html'"> Search </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class ="logo" colour = "Purple" > <align = "center"><i>ANISURF</i><br></p><br>
+      <h1>Welcome to AnimeSurf!!</h1>
+      <p>Discover new anime and watch your favorite shows for free!</p>
+      <button onclick="location.href='file:///C:/Create/.vscode/.vscode/searchpage.html'">Start Watching </button>
+    </section>
+    <section class="anime-list">
+      <h2>Popular Anime</h2>
+      <ul>
+        <li>
+          <img src="img1.jpg" alt="One Piece">
+          <h3>One Piece</h3>
+          <div class="description">
+            <p>One Piece is a Japanese anime television series based on Eiichiro Oda's manga of the same name. <span class="more-text" style="display: none;"> It premiered in October 1999 and follows the adventures of Monkey D. Luffy, a boy who gains rubber-like 
+              properties after eating a Devil Fruit. Luffy sets off on an adventure with his pirate crew in search of the greatest
+              treasure, known as the "One Piece</span></p>
+              <button class="view-more-button" onclick="toggleDescription(this)">View More</button>
+            </div>
+            <script>
+            function toggleDescription (button) {
+              var description = button.parentNode.querySelector('.more-text');
+              if (description.style.display === 'none') {
+                description.style.display = 'inline';
+                button.textContent = 'View Less';
+              } else {
+                description.style.display = 'none';
+                button.textContent = 'View More';
+              }
+            }
+            </script>
+        </li>
+        <li>
+          <img src="blc.jpeg" alt="Black Clover">
+          <h3>Black Clover</h3>
+          <div class="description">
+  <p>In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. <span class="more-text" style="display: none;">While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!</span></p>
+  <button class="view-more-button" onclick="toggleDescription(this)">View More</button>
+</div>
+<script>
+  function toggleDescription(button) {
+    var description = button.parentNode.querySelector('.more-text');
+    if (description.style.display === 'none') {
+      description.style.display = 'inline';
+      button.textContent = 'View Less';
+    } else {
+      description.style.display = 'none';
+      button.textContent = 'View More';
+    }
+  }
+</script><br>
+        </li>
+        <li>
+          <img src="Naruto.jpg" alt="Naruto">
+          <h3>Naruto</h3>
+          <p>Anime Description</p>
+        </li>
+      </ul>
+    </section>
+    <section class="genre">
+      <h2>Genre</h2>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Sci-Fi</a></li>
+      </ul>
+    </section>
+    <section class="watch">
+      <h2>Watch Anime</h2>
+      <iframe src="https://www.youtube.com/embed/videoID" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 AnimeSurf. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
